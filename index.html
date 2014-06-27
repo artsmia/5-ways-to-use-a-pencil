@@ -24,5 +24,9 @@
 
 <script>
   window.location.hash || (window.location.hash = '#landscape')
+
+  document.querySelector('nav').addEventListener('click', function(e) {
+    [].map.call(document.querySelectorAll('video'), function(video) { video.pause() })
+  })
 </script>
 
